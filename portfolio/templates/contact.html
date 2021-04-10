@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Top Bar -->
+	<div class="top-bar">
+		<div class="container">
+			<div class="col-12 text-right">
+				<p><a href="tel:+256774519574">Call us at +256-774-519-574</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- End Top Bar -->
+
+
+	<!-- Navigation -->
+	<nav class="navbar bg-light navbar-light navbar-expand-lg">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+				<img src="{% static 'web/img/logo.png' %}" alt="logo"></a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+					<li class="nav-item"><a href="about/" class="nav-link">About</a></li>
+					<!--<li class="nav-item"><a href="" class="nav-link">Projects</a></li>-->
+					<li class="nav-item"><a href="contact/" class="nav-link">Contact Us</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- Top Page Heading -->
+
+	<div class="container about-us mt-3">
+		<div class=" row text-dark ">
+			<div class="col-12 text-center">
+				<h1 class="text-dark font-weight-light">Contact Us</h1>
+				<div class="border-top border-primary w-25 mx-auto mb-1 ">
+				</div>
+				<div class="border-top border-primary w-25 mx-auto mb-5 ">
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- contact form -->
+    <section class="head pb-5">
+        <div class="container pb-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="row">
+                                <div class="col-lg-1 offset-1 col-md-2 col-sm-2 col-2">
+                                    <span class="icons" style="font-size: 20px; color: cadetblue;">
+                                        <i class="fas fa-envelope fa-2x"></i>
+                                    </span>
+                                </div>
+                                <div class="col-lg-10 col-md-9 col-sm-9">
+                                    <h3 class="font-weight-light">Find us at</h3>
+                                    <p class="">
+                                        2nd floor <br>
+                                        CNOOC Building, <br>
+                                        Plot 22 Acacia Avenue <br>
+                                        P.O Box 11813, Kampala, Uganda.
+
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row pt-3">
+                                <div class="col-lg-1 offset-1 col-md-2 col-sm-2 col-2">
+                                    <span class="icons" style="font-size: 25px; color: coral;">
+                                        <i class="fas fa-phone-volume fa-2x"></i>
+                                    </span>
+                                </div>
+                                <div class="col-lg-10 col-md-9 col-sm-9">
+                                    <h3 class="font-weight-light">Give us a ring</h3>
+                                    <p class="">
+                                        +256-774 519 574/ +256-700 731 896
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <form action="">
+                                <div class="form-row">
+                                    <div class="form-group col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <label for="">First Name</label>
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="form-group col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <label for="">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <label for="">Email Address</label>
+                                <input type="email" class="form-control " placeholder="Email">
+                                <label for="" class="pt-3">Message</label>
+                                <textarea name="" class="form-control mb-3" placeholder="Message" id="" cols="20" rows="5"></textarea>
+                                <input type="checkbox"> <label for="">I'm not a robot.</label> <button class="btn btn-success float-right">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Top Bar -->
+	<div class="top-bar">
+		<div class="container">
+			<div class="col-12 text-right">
+				<p><a href="tel:+256774519574">Call us at +256-774-519-574</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- End Top Bar -->
+
+
+	<!-- Navigation -->
+	<nav class="navbar bg-light navbar-light navbar-expand-lg">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">
+				<img src="{% static 'web/img/logo.png' %}" alt="logo"></a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+					<li class="nav-item"><a href="about/" class="nav-link">About</a></li>
+					<!--<li class="nav-item"><a href="" class="nav-link">Projects</a></li>-->
+					<li class="nav-item"><a href="contact/" class="nav-link">Contact Us</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+	<!-- End Navigation -->
+
+	<!-- Main Page Heading -->
+
+	<div class="fixed-background mb-5">
+
+		<div class="row text-light py-5">
+			<div class="col-12 text-center font-weight-bold">
+				<h1 >
+					TATS
+				</h1>
+				<div class="border-top border-primary w-25 mx-auto ">
+				</div>
+				<h3 class="py-3">technical services limited</h3>
+
+				
+			</div>
+		</div>
+
+		<div class="fixed-wrap">
+			<div class="fixed">
+
+			</div>
+		</div>
+	</div>
+
+	
+	<!-- Top Page Heading -->
+
+	<div class="container about-us">
+		<div class=" row text-dark ">
+			<div class="col-12 text-center">
+				<h1 class="text-dark font-weight-light">About Us</h1>
+				<div class="border-top border-primary w-25 mx-auto mb-1 ">
+				</div>
+				<div class="border-top border-primary w-25 mx-auto mb-5 ">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 2 Column Section -->
+
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-lg-4 mb-4 my-lg-auto ">
+				<h1 class="font-weight-bold">BRIEF</h1>
+				<p class="lead text-justify font-italic">
+					"Tats Technical Services Limited was incorporated on the 17th April 2018 with three core business areas which include; power lines and substation works, building construction, Engineering supplies and service provision in the telecommunication sector. "
+				</p>
+			</div>
+			<div class="col-lg-8">
+				<img src="{% static 'web/img/carousel/13.jpeg' %}" alt="" class="w-100">
+			</div>
+		</div>
+	</div>
+
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-lg-8 ">
+				
+				<img src="{% static 'web/img/carousel/10.jpeg' %}" alt="" class="w-75">
+				
+			</div>
+			<div class="col-lg-4 mb-4 my-lg-auto ">
+				<h1 class="font-weight-bold">VISION</h1>
+				<p class="lead text-justify font-italic">
+					"To be the leading partner in Provision of Energy and Construction solutions in the region. "
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container mb-5">
+		<div class="row">
+			<div class="col-lg-4 mb-4 my-lg-auto ">
+				<h1 class="font-weight-bold">MISSION </h1>
+				<p class="lead text-justify font-italic">
+					"To be the favorite partner to our clients by providing the most innovative, reliable and cost effective solutions to their needs at the best timelines by 2040 through our committed staff. "
+				</p>
+			</div>
+			<div class="col-lg-8">
+				<img src="{% static 'web/img/14.jpeg' %}" alt="" class="w-100">
+			</div>
+		</div>
+	</div>
+	
+	<!-- End 2 Column Section -->
+
+
+
+
+		
+	<!-- Start Two Column Section -->
+
+	<!-- End Two Column Section -->
+
+
+		<!-- Start Jumbotron -->
+
+		<div class="jumbotron py-5 mb-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-lg-8 col-xl-9 my-auto">
+						<h4>Looking for quality techinical engineering services?</h4>
+					</div>
+					<div class="col-md-5 col-lg-4 col-xl-3">
+						<a href="#" class="btn btn-primary btn-lg pt-4 pt-md-0">Contact Us Today</a>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- End Jumbotron -->
+
+	{% endblock %}
